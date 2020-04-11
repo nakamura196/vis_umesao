@@ -4,8 +4,8 @@
         "label": "Color",
         "markers": [
             {
-                "count": 4,
-                "h": 30,
+                "count": 1406,
+                "h": 150,
                 "label": "Red",
                 "url": "",
                 "value": [
@@ -14,8 +14,8 @@
                 ]
             },
             {
-                "count": 2,
-                "h": 30,
+                "count": 2800,
+                "h": 280,
                 "label": "Green",
                 "url": "",
                 "value": [
@@ -23,8 +23,8 @@
                 ]
             },
             {
-                "count": 39,
-                "h": 30,
+                "count": 7040,
+                "h": 710,
                 "label": "Blue",
                 "url": "",
                 "value": [
@@ -32,8 +32,8 @@
                 ]
             },
             {
-                "count": 21,
-                "h": 30,
+                "count": 351,
+                "h": 40,
                 "label": "Orange",
                 "url": "",
                 "value": [
@@ -41,8 +41,8 @@
                 ]
             },
             {
-                "count": 45,
-                "h": 30,
+                "count": 2983,
+                "h": 300,
                 "label": "Yellow",
                 "url": "",
                 "value": [
@@ -50,8 +50,8 @@
                 ]
             },
             {
-                "count": 315,
-                "h": 40,
+                "count": 5873,
+                "h": 590,
                 "label": "Brown",
                 "url": "",
                 "value": [
@@ -59,8 +59,8 @@
                 ]
             },
             {
-                "count": 69,
-                "h": 30,
+                "count": 15059,
+                "h": 1510,
                 "label": "Gray",
                 "url": "",
                 "value": [
@@ -68,7 +68,7 @@
                 ]
             },
             {
-                "count": 4,
+                "count": 35,
                 "h": 30,
                 "label": "White",
                 "url": "",
@@ -77,7 +77,7 @@
                 ]
             },
             {
-                "count": 3,
+                "count": 74,
                 "h": 30,
                 "label": "Black",
                 "url": "",

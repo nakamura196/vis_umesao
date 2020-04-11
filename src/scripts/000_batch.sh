@@ -7,7 +7,7 @@ python 006_get_colors.py
 
 python 007_stitch_images.py ../data/ /Users/nakamura/git/thumbnail/umesao/ ../../docs/img/ 100 10 10 default 50 20 3 30000
 python 007_stitch_images.py ../data/ /Users/nakamura/git/thumbnail/umesao/ ../../docs/img/ 100 10 10 資料種別 50 20 3 30000
-python 007_stitch_images.py ../data/ /Users/nakamura/git/thumbnail/umesao/ ../../docs/img/ 100 10 10 colors 50 20 3 30000
+python 007_stitch_images.py ../data/ /Users/nakamura/git/thumbnail/umesao/ ../../docs/img/100 10 10 colors 50 20 3 30000
 
 python 008_generate_metadata.py
 python 009_generate_labels.py ../data/ ../../docs/js/labels.json 100 10 50 20 3
