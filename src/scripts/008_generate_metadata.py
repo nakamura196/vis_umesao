@@ -10,7 +10,7 @@ import sys
 
 
 INPUT_FILE = "../data/src/curation.json"
-OUTPUT_DIR = "../js/items/"
+OUTPUT_DIR = "../../docs/js/items/"
 FILE_COUNT = 5
 
 # init
@@ -30,7 +30,7 @@ with open(curation_path) as f:
         members = selection["members"]
 
         for member in members:
-            items.append([member["thumbnail"], member["label"], member["id"]])
+            items.append([member["thumbnail"], member["label"], member["related"]])
 
 # Write out data
 groupSize = int(math.ceil(1.0 * len(items) / FILE_COUNT))

@@ -217,7 +217,7 @@ var NYPLPD = (function() {
     var item = this.getItemByEvent(evt);
 
     if (item) {
-      window.open("https://da.dl.itc.u-tokyo.ac.jp/portal/assets/" + item.captureId.replace("?_format=json", ""));
+      window.open(item.captureId);
     }
   };
 
