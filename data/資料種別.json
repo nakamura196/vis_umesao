@@ -1,0 +1,268 @@
+[
+    {
+        "count": 4,
+        "index": 0,
+        "label": "ノート",
+        "url": "",
+        "value": "ノート"
+    },
+    {
+        "count": 1,
+        "index": 1,
+        "label": "手帳",
+        "url": "",
+        "value": "手帳"
+    },
+    {
+        "count": 1,
+        "index": 2,
+        "label": "アルバム",
+        "url": "",
+        "value": "アルバム"
+    },
+    {
+        "count": 1,
+        "index": 3,
+        "label": "スケッチ・ブック",
+        "url": "",
+        "value": "スケッチ・ブック"
+    },
+    {
+        "count": 4,
+        "index": 4,
+        "label": "カード",
+        "url": "",
+        "value": "カード"
+    },
+    {
+        "count": 1,
+        "index": 5,
+        "label": "こざね",
+        "url": "",
+        "value": "こざね"
+    },
+    {
+        "count": 1,
+        "index": 6,
+        "label": "原稿",
+        "url": "",
+        "value": "原稿"
+    },
+    {
+        "count": 2,
+        "index": 7,
+        "label": "スケッチ",
+        "url": "",
+        "value": "スケッチ"
+    },
+    {
+        "count": 80,
+        "index": 8,
+        "label": "フィールドノート",
+        "url": "",
+        "value": "フィールドノート"
+    },
+    {
+        "count": 1,
+        "index": 9,
+        "label": "観察記録、原稿",
+        "url": "",
+        "value": "観察記録、原稿"
+    },
+    {
+        "count": 1,
+        "index": 10,
+        "label": "草稿、ローマ字原稿等",
+        "url": "",
+        "value": "草稿、ローマ字原稿等"
+    },
+    {
+        "count": 3,
+        "index": 11,
+        "label": "地図",
+        "url": "",
+        "value": "地図"
+    },
+    {
+        "count": 1,
+        "index": 12,
+        "label": "パッキング・リスト",
+        "url": "",
+        "value": "パッキング・リスト"
+    },
+    {
+        "count": 1,
+        "index": 13,
+        "label": "直筆原稿",
+        "url": "",
+        "value": "直筆原稿"
+    },
+    {
+        "count": 2,
+        "index": 14,
+        "label": "手紙",
+        "url": "",
+        "value": "手紙"
+    },
+    {
+        "count": 1,
+        "index": 15,
+        "label": "封筒",
+        "url": "",
+        "value": "封筒"
+    },
+    {
+        "count": 1,
+        "index": 16,
+        "label": "名簿",
+        "url": "",
+        "value": "名簿"
+    },
+    {
+        "count": 2,
+        "index": 17,
+        "label": "計画書",
+        "url": "",
+        "value": "計画書"
+    },
+    {
+        "count": 1,
+        "index": 18,
+        "label": "開催通知",
+        "url": "",
+        "value": "開催通知"
+    },
+    {
+        "count": 1,
+        "index": 19,
+        "label": "電報",
+        "url": "",
+        "value": "電報"
+    },
+    {
+        "count": 2,
+        "index": 20,
+        "label": "予定表",
+        "url": "",
+        "value": "予定表"
+    },
+    {
+        "count": 1,
+        "index": 21,
+        "label": "パスポート",
+        "url": "",
+        "value": "パスポート"
+    },
+    {
+        "count": 1,
+        "index": 22,
+        "label": "ラジオ周波数表",
+        "url": "",
+        "value": "ラジオ周波数表"
+    },
+    {
+        "count": 1,
+        "index": 23,
+        "label": "草稿（ローマ字）",
+        "url": "",
+        "value": "草稿（ローマ字）"
+    },
+    {
+        "count": 3,
+        "index": 24,
+        "label": "書類",
+        "url": "",
+        "value": "書類"
+    },
+    {
+        "count": 1,
+        "index": 25,
+        "label": "冊子",
+        "url": "",
+        "value": "冊子"
+    },
+    {
+        "count": 1,
+        "index": 26,
+        "label": "プログラム",
+        "url": "",
+        "value": "プログラム"
+    },
+    {
+        "count": 1,
+        "index": 27,
+        "label": "草稿（英文タイプ）",
+        "url": "",
+        "value": "草稿（英文タイプ）"
+    },
+    {
+        "count": 1,
+        "index": 28,
+        "label": "原稿（英文タイプ）",
+        "url": "",
+        "value": "原稿（英文タイプ）"
+    },
+    {
+        "count": 1,
+        "index": 29,
+        "label": "記事（英文印刷）",
+        "url": "",
+        "value": "記事（英文印刷）"
+    },
+    {
+        "count": 1,
+        "index": 30,
+        "label": "生徒証",
+        "url": "",
+        "value": "生徒証"
+    },
+    {
+        "count": 1,
+        "index": 31,
+        "label": "国際免許証",
+        "url": "",
+        "value": "国際免許証"
+    },
+    {
+        "count": 1,
+        "index": 32,
+        "label": "雑誌記事",
+        "url": "",
+        "value": "雑誌記事"
+    },
+    {
+        "count": 1,
+        "index": 33,
+        "label": "原稿（直筆）",
+        "url": "",
+        "value": "原稿（直筆）"
+    },
+    {
+        "count": 1,
+        "index": 34,
+        "label": "通信記事",
+        "url": "",
+        "value": "通信記事"
+    },
+    {
+        "count": 1,
+        "index": 35,
+        "label": "行動表（直筆）",
+        "url": "",
+        "value": "行動表（直筆）"
+    },
+    {
+        "count": 1,
+        "index": 36,
+        "label": "日記（ローマ字）",
+        "url": "",
+        "value": "日記（ローマ字）"
+    },
+    {
+        "count": 1,
+        "index": 37,
+        "label": "通信（手紙）",
+        "url": "",
+        "value": "通信（手紙）"
+    }
+]

@@ -1,0 +1,119 @@
+[
+    {
+        "id": "colors",
+        "label": "Color",
+        "markers": [
+            {
+                "count": 4,
+                "h": 30,
+                "label": "Red",
+                "url": "",
+                "value": [
+                    "#f00",
+                    "#f0f"
+                ]
+            },
+            {
+                "count": 2,
+                "h": 30,
+                "label": "Green",
+                "url": "",
+                "value": [
+                    "#0f0"
+                ]
+            },
+            {
+                "count": 39,
+                "h": 30,
+                "label": "Blue",
+                "url": "",
+                "value": [
+                    "#00f"
+                ]
+            },
+            {
+                "count": 21,
+                "h": 30,
+                "label": "Orange",
+                "url": "",
+                "value": [
+                    "#ffa500"
+                ]
+            },
+            {
+                "count": 45,
+                "h": 30,
+                "label": "Yellow",
+                "url": "",
+                "value": [
+                    "#ff0"
+                ]
+            },
+            {
+                "count": 315,
+                "h": 40,
+                "label": "Brown",
+                "url": "",
+                "value": [
+                    "#e06f1f"
+                ]
+            },
+            {
+                "count": 69,
+                "h": 30,
+                "label": "Gray",
+                "url": "",
+                "value": [
+                    "#777777"
+                ]
+            },
+            {
+                "count": 4,
+                "h": 30,
+                "label": "White",
+                "url": "",
+                "value": [
+                    "#ffffff"
+                ]
+            },
+            {
+                "count": 3,
+                "h": 30,
+                "label": "Black",
+                "url": "",
+                "value": [
+                    "#000000"
+                ]
+            },
+            {
+                "count": 0,
+                "h": 30,
+                "label": "Unknown",
+                "url": "",
+                "value": [
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "id": "資料種別",
+        "label": "資料種別",
+        "markers": [
+            {
+                "count": 80,
+                "h": 30,
+                "label": "フィールドノート",
+                "url": "",
+                "value": "フィールドノート"
+            },
+            {
+                "count": 51,
+                "h": 30,
+                "label": "Other",
+                "url": "",
+                "value": ""
+            }
+        ]
+    }
+]

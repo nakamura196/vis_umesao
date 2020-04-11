@@ -1,0 +1,424 @@
+@import "../css/vendor/normalize.css";
+
+@import "mixins";
+@import "variables";
+@import "animations";
+
+body {
+  font-family: "Kievit","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  background: $grayDarkest;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: $blueLight;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lighten($blueLight, 10%);
+}
+
+button {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin-top: $headerHeight;
+}
+
+.nav-container {
+  width: $navWidth;
+  height: 100%;
+  position: fixed;
+  top: $headerHeight;
+  right: $mapWidthMin;
+  overflow: visible;
+  background: $grayDark;
+
+  .nav {
+    @include transform-origin(0 0);
+    @include transform(rotate(90deg) translateY(-$navWidth));
+    @include clearfix();
+    position: absolute;
+    width: 2000px;
+  }
+
+  .nav-item {
+    display: block;
+    float: left;
+    height: $navWidth - 10px;
+    line-height: $navWidth - 10px;
+    margin: 10px 0 0 0;
+
+    padding: 0 20px;
+  }
+
+  .nav-tabs {
+    float: left;
+  }
+
+  .nav-tab {
+    cursor: pointer;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: lighten($grayDark, 10%);
+    margin-right: 1px;
+    @include box-sizing();
+    @include transition(background 0.5s);
+
+    &:hover {
+      background: lighten($grayDark, 15%);
+    }
+
+    &.active,
+    &.active:hover {
+      background: $grayDarkest;
+    }
+  }
+
+  .info-button {
+    width: 30px;
+    height: 30px;
+    line-height: 34px;
+    margin-top: $navWidth - 40px;
+    margin-left: 10px;
+    padding: 0;
+    background: $blue;
+    color: $white;
+    border-radius: 15px;
+    text-align: center;
+    @include transform(rotate(-90deg));
+
+    &:hover {
+      background: lighten($blue, 10%);
+    }
+  }
+}
+
+.map-container {
+  width: $mapWidthMin;
+  height: 100%;
+  background: $grayDarkest;
+  position: fixed;
+  top: $headerHeight;
+  right: 0;
+  overflow: hidden;
+  z-index: 80;
+  @include transition(width 0.5s);
+
+  &:hover {
+    width: $mapWidth;
+  }
+
+  .map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .map-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    cursor: ns-resize;
+    @include box-shadow(0px 0px 0px 1000px rgba($grayDarkest, 0.5));
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include animation(fadeOut 1s);
+
+    &.active {
+      @include animation(fadeIn 1s);
+    }
+  }
+}
+
+.viz-container {
+  position: relative;
+  width: auto;
+  min-width: $imageWidth + $markerWidth;
+  margin-right: $navWidth + $mapWidthMin;
+  background: $grayDarkest;
+  @include transform-origin(0 0);
+  @include clearfix();
+}
+.viz-images {
+  width: $imageWidth;
+  height: $imageHeight;
+  float: left;
+  position: relative;
+  background: $black;
+
+  .viz-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    @include animation(fadeOut 1s);
+
+    &.active {
+      @include animation(fadeIn 1s);
+    }
+  }
+}
+.item-info-box {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background: rgba($grayDarkest, 0.8);
+  border-radius: 6px;
+  padding: 12px;
+  width: 150px;
+  display: none;
+
+  img {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    background: url(../img/loading.gif) $black center center no-repeat;
+  }
+
+  h5 {
+    margin: 1em 0 0;
+  }
+
+  &.active {
+    display: block;
+  }
+}
+
+.viz-markers {
+  margin-left: $imageWidth;
+
+  .markers {
+    display: none;
+    @include animation(fadeOutUp 1s);
+
+    &.active {
+      display: block;
+      @include animation(fadeInUp 1s);
+    }
+  }
+
+  .marker {
+    position: relative;
+    overflow: visible;
+    border-bottom: 1px solid $grayDarker;
+    @include box-sizing();
+
+    .marker-inner {
+      overflow: hidden;
+    }
+
+    &:before {
+      content: ' ';
+      width: $imageWidth;
+      height: 100%;
+      position: absolute;
+      top: -1000px;
+      left: -$imageWidth;
+      border-top: 1000px solid rgba($grayDarkest, 0.6);
+      border-bottom: 1000px solid rgba($grayDarkest, 0.6);
+      display: none;
+    }
+
+    &.active {
+      background: lighten($grayDarkest, 10%);
+      z-index: 75;
+      &:before {
+        display: block;
+      }
+    }
+
+    &:after {
+      content: ' ';
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @include background-gradient($grayDarkest, $grayDarkest, 0, 1);
+    }
+
+    a,
+    span {
+      display: block;
+      margin: 0;
+      padding: 10px;
+    }
+
+    &.short {
+
+      &:after {
+        display: none;
+      }
+      a,
+      span {
+        padding: 8px 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+  }
+}
+
+.sticky-content {
+  position: fixed;
+  top: $headerHeight + 10px;
+  left: $imageWidth + 10px;
+  z-index: 100;
+  margin-right: $navWidth + $mapWidthMin;
+  display: none;
+  @include transform(scale(1));
+
+  &.active {
+    display: block;
+  }
+}
+
+.overlay {
+  background: rgba($grayDarkest, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  > div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    @include transform(translateY(-60%));
+    color: $white;
+    font-size: 1.6em;
+    line-height: 2;
+  }
+
+  .info-button {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    background: $blue;
+    color: $white;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      background: lighten($blue, 10%);
+    }
+
+    &:before {
+      content: 'Explore';
+    }
+
+    &.loading {
+      cursor: default;
+      opacity: 0.8;
+
+      &:hover {
+        background: $blueLight;
+      }
+
+      &:before {
+        content: 'Loading...'
+      }
+    }
+  }
+}
+
+.nypl-header {
+  width: 100%;
+  height: $headerHeight;
+  line-height: $headerHeight;
+  background: #1a404f;
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+
+  .lion {
+    display: inline-block;
+    background: transparent url(../img/NYPL_logo1_white_rev.svg) left center no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 1px;
+    color: #1a404f;
+    vertical-align: middle;
+  }
+}
+
+/* Big Screens */
+@media screen and (min-width: $mapMaxBreak) {
+  .nav-container {
+    right: $mapWidth;
+  }
+  .map-container {
+    width: $mapWidth;
+  }
+  .viz-container {
+    margin-right: $navWidth + $mapWidth;
+  }
+  .sticky-content {
+    margin-right: $navWidth + $mapWidth;
+  }
+}
+
+#large-breakpoint {
+  display: block;
+  opacity: 0;
+  width: $mapMaxBreak;
+  height: 0;
+  z-index: -1;
+}
+
+/* Medium to Small Screens */
+@media screen and (max-width: $mapMaxBreak - 1) {
+  #large-breakpoint {
+    display: none;
+  }
+}
+
+@font-face{
+  font-family:"Kievit";
+  font-style:normal;
+  font-weight:400;
+  src:url("http://ux-static.nypl.org.s3-website-us-east-1.amazonaws.com/ff_kievit_web/KievitWeb-Book.woff") format('woff');
+}

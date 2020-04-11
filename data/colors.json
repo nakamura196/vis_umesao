@@ -1,0 +1,83 @@
+[
+    {
+        "count": 4,
+        "index": 0,
+        "label": "Red",
+        "value": [
+            "#f00",
+            "#f0f"
+        ]
+    },
+    {
+        "count": 2,
+        "index": 1,
+        "label": "Green",
+        "value": [
+            "#0f0"
+        ]
+    },
+    {
+        "count": 39,
+        "index": 2,
+        "label": "Blue",
+        "value": [
+            "#00f"
+        ]
+    },
+    {
+        "count": 21,
+        "index": 3,
+        "label": "Orange",
+        "value": [
+            "#ffa500"
+        ]
+    },
+    {
+        "count": 45,
+        "index": 4,
+        "label": "Yellow",
+        "value": [
+            "#ff0"
+        ]
+    },
+    {
+        "count": 315,
+        "index": 5,
+        "label": "Brown",
+        "value": [
+            "#e06f1f"
+        ]
+    },
+    {
+        "count": 69,
+        "index": 6,
+        "label": "Gray",
+        "value": [
+            "#777777"
+        ]
+    },
+    {
+        "count": 4,
+        "index": 7,
+        "label": "White",
+        "value": [
+            "#ffffff"
+        ]
+    },
+    {
+        "count": 3,
+        "index": 8,
+        "label": "Black",
+        "value": [
+            "#000000"
+        ]
+    },
+    {
+        "count": 0,
+        "index": 9,
+        "label": "Unknown",
+        "value": [
+            ""
+        ]
+    }
+]
